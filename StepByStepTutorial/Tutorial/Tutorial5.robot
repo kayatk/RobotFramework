@@ -1,9 +1,10 @@
 *** Settings ***
 Library    SeleniumLibrary    
-Test Setup    Log    inside setup    
-Test Teardown    Log    Outside TC    
-Suite Setup    Log    Inside TS    
-Suite Teardown    Log    Outside Ts        
+Suite Setup    Log    I am inside Test Suite Setup
+Suite Teardown    Log    I am inside Test Suite Teardown 
+Test Setup    Log    I am inside Test Setup
+Test Teardown    Log    I am inside Test Teardown
+Default Tags    sanity         
 
 *** Variables ***
 ${URL}    https://courseweb.sliit.lk/ 
@@ -30,6 +31,7 @@ FirstSeleniumTest
     Log    Test Completed
     
 LoginTestSelenium
+    [Tags]    smoke
     [Documentation]    This the login test using selenium library
     Open Browser    ${URL}    chrome
     Sleep    2
