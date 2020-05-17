@@ -8,7 +8,7 @@ Default Tags    sanity
 
 *** Variables ***
 ${URL}    https://courseweb.sliit.lk/ 
-@{Credentials}    IT16123182    It16123182@#1
+@{Credentials}    IT167654    hjgjdfhss
 
 *** Keywords ***
 LoginKW
